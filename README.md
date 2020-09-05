@@ -1,2 +1,2 @@
-# Front-end-Template-company-site-
+# Front-end Template company site
 Template for company site 
