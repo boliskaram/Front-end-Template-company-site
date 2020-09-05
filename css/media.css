@@ -1,0 +1,25 @@
+@media(max-width: 767px){
+
+    .navbar-inverse .navbar-nav > li > a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse{
+        max-height: none;
+    }
+
+    .newsletter .form-control{
+        margin: 10px auto;
+    }
+}
+
+@media(min-width: 768) and (max-width: 991) {
+}
+
+@media(min-width: 992) and (max-width: 1199) {
+}
+
+@media(min-width: 1200) {
+}

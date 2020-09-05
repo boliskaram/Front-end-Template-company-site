@@ -1,0 +1,22 @@
+.navbar-inverse .navbar-brand span, 
+.about h1 span,.about h3 span,
+.feature .feat span.glyphicon,
+.testimonials span,
+.newsletter h2,
+.footer h3,
+.footer .copyright span,
+.scroll{color: #b6100d;}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+.option-box .gear-check, .slider .carousel-indicators .active,
+.PTable .PBox .productinfo a,.newsletter .btn,.skill .progress-bar{ background-color: #b6100d;}
+
+.navbar-nav > li > .dropdown-menu { border-top: 1px solid #b6100d; }
+
+.option-box .color-option, .testimonials .carousel-indicators li, .our-team2 .employee2-front img,
+.our-team .employee img:hover{ border: 1px solid #b6100d; }
+
+.employee2 > div{ border: 2px solid #b6100d; }

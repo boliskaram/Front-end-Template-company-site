@@ -1,0 +1,91 @@
+/* start style about us page */
+
+/* start section breadcrumb */
+.bread{
+    background-color: #f5f5f5f5;
+}
+
+.bread .breadcrumb{
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+/* end section breadcrumb */
+
+/* start section about us */
+.about_us{
+    margin-top: 5px;
+}
+.about_img{
+	background: url(../img/basket.jpg) no-repeat center center ;
+    -webkit-background-size: cover ;
+	-moz-background-size: cover ;
+	-o-background-size: cover ;
+	background-size: cover;
+    min-height: 600px;
+	width: 100%;
+	overflow: hidden;
+}
+.about_us h1{
+    margin-top: 85px;
+    float: right;
+    padding-right: 29% ;
+    color: #b6100d;
+    font-size: 82px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    font-family: 'Sigmar One', cursive; 
+}
+.about_us .us{
+    font-size: 82px;
+    letter-spacing: -5px;
+    color: #d8a600;
+    margin-top: -40px;
+    margin-left: 60px;
+
+    font-family: 'Sigmar One', cursive;
+}
+.about_us .lead{
+    margin-left: -30px;
+    margin-top: -10px;
+    color: #ddd;
+    font-size: 16px;
+    padding-right: 10px;
+}
+/* end section about us */
+
+/* start section story */
+.story{
+    background-color: #eee;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0px 15px 15px ;
+
+}
+.story .container {
+    background-color: #fff;
+    margin-top: -150px;
+    padding-bottom: 5px;
+}
+
+.story .lead {
+    font-size: 16px;
+}
+
+.story .img_team{
+    margin-top: 50px;
+    margin-right: -60px;
+}
+/* start section story */
+
+
+
+
+
+
+
+
+
+
+
+/* end style about us page */

@@ -1,0 +1,383 @@
+body { padding-top: 50px; 
+	/* overflow: hidden;*/ 
+
+}
+
+/* start style for loading section */
+.loading{
+	background-color: #bbb;
+	opacity: .9;
+	height: 100%;
+	width: 100%;
+	z-index:99999;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.sk-chase {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 49%;
+	left: 49%;
+	animation: sk-chase 2.5s infinite linear both;
+}
+.sk-chase-dot {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0; 
+	animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+.sk-chase-dot:before {
+	content: '';
+	display: block;
+	width: 25%;
+	height: 25%;
+	background-color: #333;
+	border-radius: 100%;
+	animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+@keyframes sk-chase { 100% { transform: rotate(360deg); } }
+@keyframes sk-chase-dot {	80%, 100% { transform: rotate(360deg); } }
+@keyframes sk-chase-dot-before {
+	50% {	transform: scale(0.4); }
+	100%, 0% { transform: scale(1.0); } 
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* start style for navbar */
+/* main navbar */
+.navbar-inverse {	font-size: 16px;	min-height: 50px; }
+/*  Brand name  */
+.navbar-inverse .navbar-brand {	font-size: 30px; line-height: 20px;	color: #ccc;}
+.navbar-inverse .navbar-brand span { font-size: 20px; }
+/* button for mobile screen */
+.navbar-toggle { margin-top: 17px; }
+/* links in navbar */
+.navbar-inverse .navbar-nav > li > a { color: #ccc; padding-top: 15px; padding-bottom: 15px; }
+/* dropdown menu */
+.navbar-nav > li > .dropdown-menu { background-color: #333; min-width: 210px; right: auto; left: 0; }
+/* links in dropdown in navbar */
+.dropdown-menu > li > a { color: #fff; padding: 5px 20px; }
+/* links in dropdown in navbar with hover and focus */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {color: #fff;padding: 5px 25px;}
+/* lines in dropdown in navbar */
+.dropdown-menu .divider { background-color: #f54845; }
+/* end style for navbar */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* start style color option box */
+.option-box{ position: fixed; top: 50px; left: 0px; z-index: 9999; }
+.option-box .color-option{
+	float: left;
+	background-color: #333;
+	color: #FFF;
+	padding: 5px;
+	width: 120px;
+	display: none;
+}
+.option-box .color-option ul li{width: 20px; height: 20px; display: inline-block; cursor: pointer; }
+.option-box .gear-check{ padding: 5px; color: #FFF; cursor: pointer; }
+/* end style color option box */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/*  start style for carousel */
+/* buttom for right in carousel */
+.slider{ width: 100%; }
+.slider .container-fluid{ margin: 0px; padding: 0px; }
+/* buttom for left or right in carousel */
+.slider .carousel-control.left, .slider .carousel-control.right { width: 10%; }
+/* style for image in carousel */
+.slider .carousel-inner > .item > img,
+.slider .carousel-inner > .item > a > img{ display: block; max-height: 560px; margin: auto; width: 100%; }
+.slider .carousel-indicators{ bottom: 0 }
+/* style indicators in carousel */
+.slider .carousel-indicators li{ height: 12px; width: 12px; }
+.slider .carousel-indicators .active{ height: 15px; width: 15px; } 
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* start style for section about */
+/* paragraph in about section */
+.about{overflow: hidden;}
+.about .lead{ font-size: 22px; color: #777; margin-top: 10px; }
+.about h1,.about h3 { font-weight: bold; font-size: 40px;}
+.about h1 span,.about h3 span { font-size: 30px; }
+/* end style for section about */
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* start style section feature */
+/* main section  */
+.feature{background-color: #eee;overflow: hidden;}
+/* style div feat which contains span , h4 and p */
+.feature .feat{ margin-bottom: 25px; }
+/* style p in feat div in feature section  */
+.feature .feat p{ line-height: 2em; }
+/* style span in feat div in feature section */
+.feature .feat span.glyphicon{ font-size: 24px; margin-bottom: 10px; }
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* start style testimonials */
+
+/* content for testimonials  */
+.testimonials .carousel-inner{ min-height: 160px; }
+/* style p in section */
+.testimonials .lead{ line-height: 2em; margin-bottom: 10px; }
+/* style name of people who give us their opinions  */
+.testimonials span{ font-size: 20px; font-weight: bold; }
+/* style indicators in testimonials section */
+.testimonials .carousel-indicators{ position: static; width: 100%; margin-left: 0; padding-top: 15px; }
+/* style link in indicators in testimonials section */
+.testimonials .carousel-indicators li{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-left: 5px;
+	text-indent: 0;
+	opacity: .5;
+	overflow: hidden;
+}
+/* style when hover on indicator */
+.testimonials .carousel-indicators :hover{ opacity: 0.9; }
+/* style indicators when press them */
+.testimonials .carousel-indicators .active{ opacity: 1; transform: scale(1.1); transform: rotatez(360deg); } 
+/* style images  indicators in testimonials section */	
+.testimonials .carousel-indicators li img{ max-width: 100%;}
+/* end style testimonials */
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* start style our-tream section */
+.our-team{
+	background: url(../img/background1.png) no-repeat center center fixed ;
+	-webkit-background-size: cover ;
+	-moz-background-size: cover ;
+	-o-background-size: cover ;
+	background-size: cover;
+	min-height: 600px;
+	width: 100%;
+	overflow: hidden;
+}
+/* style team div that contain every thing */
+.our-team .team{ background-color: rgb(25,25,25,.6); min-height: 600px; padding-top: 20px; }
+/* style main header for this section */
+.our-team h2{ color: #ddd;}
+/* style for every employee  */
+.our-team .employee{ padding-top: 50px; margin-bottom: 10px ; }
+/* style img for every employee */
+.our-team .employee img { width: 200px; height: 200px; border: 1px solid #aaa; margin-bottom: 5px; }
+.our-team .employee img:hover {
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transform:scale(1.2);
+}
+.our-team .employee h3{ color: #ddd; font-weight: bold; }
+.our-team .employee p{ color: #ddd; font-size: 16px; }
+.our-team i{ color: #b6100d;}
+/*end style for every employee2  */
+/* end style our tream section   */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* start style our-tream2 section   */
+.our-team2{ margin-top: 20px; background-color: #eee ; min-height: 600px; perspective: 1500px; overflow: hidden;}
+/* style main header for this section */
+.our-team2 h2{ color: rgb(25,25,25);}
+/* style for every employee2  */
+.our-team2 .employee2{
+	padding: 20px 20px ;
+	min-height: 500px;
+	margin-bottom: 10px ;
+	position: relative;	
+	transform-style: preserve-3d;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+/* style front and back employee2 info  */
+.employee2 > div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px 10px 20px;
+	border-radius: 20px;
+	background-color: #ddd;
+}
+/* style for front employee2 only  */
+.our-team2 .employee2-front{ z-index: 2; backface-visibility: hidden; }
+/* style img in employee2 div  */
+.our-team2 .employee2-front img { width: 150px; height: 150px; margin-bottom: 5px; }
+/* style name of employee2 */
+.our-team2 .employee2-front h3{ color: rgb(25,25,25); font-weight: bold; }
+/* style info about employee2 */
+.our-team2 .employee2-front p{ color: #333; line-height: 1.5em; font-size: 16px; margin-bottom: 10px; }
+/* style for end employee2 only  */
+.our-team2 .employee2-back{ z-index: 1; backface-visibility: hidden	; transform: rotateY(180deg); } 
+/* style for accounts for employee2 */
+.our-team2 .employee2-back ul{ list-style: none; line-height: 4; margin-top: 30%; padding: 0; font-size: 18px; }
+/*end style for every employee2  */
+/* end style our tream2 section   */
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* start style newsletter section  */
+.newsletter{
+	background-color: #222;
+	margin: 20px;
+	border-radius: 10px; 
+}
+.newsletter h2{ letter-spacing: 1px; }
+.newsletter p{ font-size: 22px; color: #888; }
+.newsletter form{ margin-top: 35px ; }
+.newsletter .form-control{
+	border: 0px;
+	border-radius: 0px;
+	width: 350px ;
+	margin: -4px;
+	box-shadow: none;
+	padding: 5px;
+	color: #222;
+}
+.newsletter .btn{ border-radius: 0px; height: 46px; }
+/* end style newsletter section  */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* start style skills section */
+
+.skill h2{ font-size: 40px;	letter-spacing: 1px;}
+.skill .skill-info h3{ margin-top: 0; font-size: 25px; font-weight: bold; }
+.skill .progress{ height: 30px; }
+.skill .progress-bar{
+	line-height: 30px;
+	font-size: 15px; 
+	font-weight: bold; 
+	text-align: left; 
+	text-indent: 10px;
+}
+/* end style skills section */
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* start style for our clients section */
+.client{ background-color: #ddd; margin-bottom: 20px;  overflow: hidden;}
+.client h2{ letter-spacing: 2px;}
+.client li{ margin-bottom: 10px; }
+.client img{  width: 120px; height: 130px; margin-bottom: 5px; opacity: .8; }
+.client img:hover{ opacity: 1; }
+.client p{ font-size: 16px; }
+/* end style for our clients section */
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* start style contact us section */
+.contact { background-color: #313840; margin-bottom: 20px; overflow: hidden;}
+.contact i{ color: #8a8a8a; }
+.contact h2{ color: #8a8a8a; letter-spacing: 1.75px; }
+.contact p{ color: #8a8a8a; margin-bottom: 35px; }
+.contact input[type="text"],.contact textarea{
+	border: 0px;
+	background-color: #313840;
+	color: #8a8a8a;
+	border-bottom: 1px solid #888;
+	border-radius: 0px;
+	box-shadow: none;
+	resize: none;
+}
+.contact textarea:focus{ background-color: #313840; box-shadow: none; border-bottom: 1px solid #888; }
+.contact button{
+	margin-top: 40px;
+	background-color: #313840;
+	color: #8a8a8a;
+	font-size: 20px;
+	border: 1px solid #8a8a8a;
+	width: 200px;
+	height: 50px;
+}
+.contact button:hover{ outline: none; background-color: #313840; color: #FFF; border: 1px solid #FFF;}
+/* end style contact us section */
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* start style footer section */
+.footer{ background-color: #333; padding-top: 20px; color: #bbb; }
+.footer h3{ font-size: 28px; }
+.clear{ clear: both; }
+.footer .three-columns{ overflow: hidden; }
+.footer .three-columns li {  width: 33.33333%; float: left; padding-bottom: 20px; }
+.footer .three-columns li a{ font-size: 16px; color: #bbb; }
+.footer .social{ overflow: hidden; }
+.footer .social li{ margin-right:10px; float: left; }
+.footer .social li img{ width: 50px; height: 50px; }
+.footer .img-thumbnail{
+	width: 150px;
+	height: 110px;
+	border:1px solid #333;
+	background: rgb(0,0,0,.2);
+	margin-bottom: 10px;
+}
+.footer .copyright{ padding: 10px 0px; background-color: #222; font-size: 20px; margin-top: 30px; }
+/* end style footer section */
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* start style scroll top */
+	.scroll{
+		position:fixed;
+		bottom: 10px;
+		right: 10px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		z-index: 9999;
+		display: none;
+	}
+/* end style scroll top */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* grouping */
+
+.feature h2,.testimonials h2,.testimonials h4,.our-team h2,
+.our-team2 h2,.skill h2,.client h2{ margin-bottom: 35px; }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.testimonials .carousel-indicators li,
+.our-team .employee img,
+.client img{	
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+}
+
+
+.about,.feature,.testimonials,
+.our-team2,.newsletter,.skill,.client,.contact{
+	padding-top: 40px; padding-bottom: 40px; 
+}
