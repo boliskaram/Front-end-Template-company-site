@@ -56,16 +56,16 @@
 
 /* start section story */
 .story{
-    background-color: #eee;
+    /* background-color: ; */
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin: 0px 15px 15px ;
 
 }
 .story .container {
-    background-color: #fff;
+    background-color: #eee;
     margin-top: -150px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .story .lead {
@@ -73,19 +73,52 @@
 }
 
 .story .img_team{
-    margin-top: 50px;
-    margin-right: -60px;
+    margin-top: 70px;
+    margin-right: -70px;
 }
 /* start section story */
-
-
-
-
-
-
-
-
-
-
-
 /* end style about us page */
+
+
+/* start style FAQ page */
+
+.faq-head{
+    margin-bottom: 20px;
+}
+.faq-head h1{
+    font-size: 60px;
+    font-family: 'Sigmar One', cursive; 
+    letter-spacing: -5px;
+    color: #000;
+    margin-bottom: 25px;
+}
+.faq-head p{
+    font-size: 18px;
+    padding-left: 12%;
+    width: 89%;
+}
+
+.faq-question .panel-heading{
+    padding: 15px 30px;
+}
+.faq-question .panel-heading a{
+    text-decoration-line: none;
+    font-size: 18px;
+    color: #000;
+}
+.faq-question .panel-heading a:after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    color: #000;
+    float: right;
+}
+.faq-question .panel-heading a.collapsed::after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e080";
+    color: #777;
+}
+.faq-question .panel-body{
+    font-size: 16px;
+}
+
+/* start style FAQ page */
